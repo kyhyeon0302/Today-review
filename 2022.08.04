@@ -1,0 +1,20 @@
+오늘은 OOP개념중 오버로딩(overloading)과 오버라이딩(overriding)에 차이점에 대해서 모호한 것을 정리하였다.
+우선 오버로딩은 기존에 없는 메서드를 새롭게 정의하는것으로 NEW의 느낌을 가지고 있고
+오버라이딩은 상속받은 메서의 내용을 변경하는 Change의 느낌이 강했다.
+
+
+아래 예시를 보면
+
+Class Parent{
+     void parentMethod() {}
+     }
+     
+class child extends Parent{
+     void parentMethod() {} //이때 이 부분은 오버라이딩을 말한다.
+     void parentMethod(int i ) {} // 바로 윗줄인 parentMethod()와 달리 (int i)로 새로운 메서드를 정의 하였으므로 오버로딩에 해당한다.
+     void childMtehod() {} //새로운 메서드를 정의한 것 이다.
+     void childMethod(int i) {} //위와 다른 새로운 메서드를 정의 했기 때문에 오버로딩이다.
+     void childMethod() {}  위로 두줄 위에 메서드와 중복되므로 에러가 발생한다.
+
+
+위의 예제 코드를 통해 오버로딩과 오버라이딩의 개념에 대해서 정리했다.
