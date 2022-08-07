@@ -1,0 +1,48 @@
+ 오늘은 추상클래스에 대해서 배웠다.
+ 추상 클래스는 미완성 클래스를 말하는 것으로 미완성 설계도를 지칭한다,.
+ 이때 가장 큰 특징은 인스턴스 생성불가이다. 
+ 추상메서드를 구현이하기 위해서는 몸통 {} 을 만들면 된다.
+ 
+ abstract 리턴타입 메서드이름();
+ 
+아래의 코드를 보면
+
+//코드 시작
+public class Main{
+	
+	public static void main(String[] args) {
+		abstract class Player {
+			abstract void play(int pos);
+			abstract void stop();
+						
+		}
+		
+		class AudioPlayer extends Player{
+			void play(int pos) {}  // {}블록을 보면 추상메서드를 구현하는 것을 말한다.
+			void stop() {}
+			
+		
+			
+		}
+		
+		abstract class AbstractPlayer extends Player{
+			void play(int pos) {}
+		}
+	}
+}
+
+
+추상메서드에는 구현부가 없으니깐 괄호{} 대신에 ; 을 적어준다!
+
+
+
+추가적으로 참조변수와 객체배열에 대해서 복습을 하였는데
+예를 들면 
+
+unit[] group = new unit[3]
+group[0] = new Marine();
+group[1] = new Tank();
+group[2] = new Dropship();
+
+이때 group[0],group[1],group[2] 이런 친구들을 참조변수(리모컨역할)라고 한다.
+그리고 unit[3]에 해당하는 것을 객체배열이라하고 객체배열은 참조변수의 묶음이다.
