@@ -1,0 +1,53 @@
+오늘은 Stack과 Queue에 대하여 공부하였다. 자료구조의 범주에 속하는 스택과 큐는 서로 다른 특징을 가지고 있었다.
+스택은 비어있는 양동이처럼 아랫쪽이 막혀 있어서 아랫면 부터 채우고 빠질 때는 윗면 부터 빠지는 특징이 있고
+큐는 티켓팅 라인처럼 먼저 오면 먼저 나가는 순서로 진행되는 특징이 있었다. 아래 예시 코드를 보면
+
+
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Stack st = new Stack();
+		Queue q = new LinkedList();
+		
+		
+		st.push("0");  // puch는 스택에 객체를 저장하는 것을 말한다.
+		st.push("1");
+		st.push("2");
+		
+		
+		q.offer("0");  // offer는 큐에 객체를 저장하는 것을 말한다.
+		q.offer("1");
+		q.offer("2");
+		
+		
+		
+		System.out.println("= stack = ");
+		while(!st.empty()) {
+			System.out.println(st.pop()); //pop는 스택에서 순차적으로 객체를 하나씩 꺼낸다.
+			
+			}
+		
+		
+		System.out.println("= Queue= ");
+		while(!q.isEmpty()) {
+			System.out.println(q.poll()); //pol은 큐에서 순차적으로 객체를 하나씩 꺼낸다.
+		}
+	}
+}
+
+이에 대한 결과값은 
+
+= stack = 
+2
+1
+0
+= Queue= 
+0
+1
+2
+
+이와 같이 출력이 되었다.
+이렇게 알 수 있듯이 스택은 넣은 순서가 있으면 젤 위쪽부터 꺼내고
+큐는 아래쪽 넣은것이 먼저 꺼낸 다는 것을 알 수 있었다.
+
