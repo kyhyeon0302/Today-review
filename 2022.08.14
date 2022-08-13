@@ -1,0 +1,48 @@
+오늘은 List에서 LinkedList, Vector, ArrayList에 대해서 배웠다
+아래코드를 보면
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		list<integer> list = new ArrayList<>(10); //10은 inititalCapacity 초기 배열의 크기를 얼마나 할지 모르기 때문에 10으로 설정해놓는거. 1로 놓으면 1에서 점점 늘어남.
+		
+		//vector와 ArrayList 동기화의 유미에 따라 다르다.
+
+		//LinkedList
+		//List 인터페이스
+		//ArrayList (not synchronize)
+		//Vector (synchronize)
+		
+		
+		
+//		LinkedList<Integer> list = new LinkedList();
+//		list.add(1);
+//		list.add(2);
+//		list.add(3);
+//		list.add(1, 5); //(index, element)
+//		list.remove(2); // index에 들어있는 숫자를 제거
+//		
+//		System.out.println(list.get(2)); //3번째 있는 요소를 출력하는 것.
+//		System.out.println(list.contains(1)); //list안에 1이 포함되어 있는지 확인
+		
+//		List<Integer> list = new Vector<>(); // 벡터 형 = 다형성
+//		list.add(1);
+//		list.add(2);
+//		list.add(3);
+//		
+//		method1(list);
+//	}
+//	
+//	static void method1(List<Integer> list) {
+//		System.out.println(list.size());
+//		System.out.println(list.isEmpty());
+		
+		
+		
+	}
+}
+
+list내에서 많은 메소드를 통해 편리하게 요소를 추가하거나 제거할 수 있고, contains와 같은 기능을 통해 요소가 존재하는지 확인도 할 수 있다.
+또한 Array는 중간에 변경이 불가하기때문에 배열의 길이를 늘리기 위해서는 ArrayList를 통해 새로운 길이의 배열을 만들고 복사하는 형태로 요소를 추가할 수 있다.
