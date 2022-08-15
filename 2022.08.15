@@ -1,0 +1,30 @@
+오늘은 HashSet에 대하여 분석하였다. 컬렉션 프레임워크의 Set인터페이스를 구현하기 위한 대표적인 컬렉션이다.
+가장 큰 특징은 HashSet은 요소들을 중복하지 않고 저장한다는 특징이 있다. 생성자 또는 메서드로는
+
+HashSet() : 객체 생성
+int size() : 저장된 객체의 갯수 반환
+Object[] toArray() : 저장된 객체를 객체배열의 형태로 반환
+Object[] toArray(Object[] a) : 저장된 객체를 주어진 특정 객체 a에 저장.
+HashSet(int initialCapacity) : 주어진 컬렉션을 포함하는 HashSet 객체 생성
+void clear() : 저장된 모든 객체 삭제
+
+
+아래는 HashMap과 LinkedList를 이용한 로또 추출 예시이다.
+
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Set set = new HashSet();
+		
+		for(int i=0; set.size() < 6; i++) {
+			int num = (int)(Math.random()*45) + 1;
+			set.add(new Integer(num));
+		}
+		
+		
+		List list = new LinkedList(set);
+		Collections.sort(list);
+		System.out.println(list);
+	}
+}
