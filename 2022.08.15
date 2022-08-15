@@ -28,3 +28,10 @@ public class Main{
 		System.out.println(list);
 	}
 }
+
+
+
+*추가적으로 오늘 인프런 강의를 시작했는데 Spring 시작하자마자 자바버전 오류가 계속 떠서 가까스로 해결하였다.
+아래 해결 링크
+
+https://hyeon0302.tistory.com/10
