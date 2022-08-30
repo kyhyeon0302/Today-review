@@ -1,2 +1,32 @@
 OOP개념 재정립
 
+클래스명 변수명
+변수명 = new 클래스명
+
+
+예를 들면
+
+class Tv {
+	String color; //color, power, channel들은 멤버변수를 말한다. 즉 tv의 속성
+	boolean power;
+	int channel;
+	
+	void power() {power = !power; } // void power, channelup, down은 메서드를 말한다.
+	void channelup() { ++channel;}
+	void channeldown() {--channel;}	
+	
+}
+
+
+public class Main{
+	public static void main(String[] args) {
+		Tv t;
+		t = new Tv();
+		t.channel = 100;
+		t.channeldown();
+		System.out.println(t.channel);
+		
+	}
+}
+
+결과는 현재 채널은 99가 될 것이다.
