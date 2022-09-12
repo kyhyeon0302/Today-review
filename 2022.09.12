@@ -11,3 +11,5 @@ long : 정수
 float, double : 실수
 String : 문자열
 
+String input = null; // 기본값으로 초기화 하는 것.  안넣어도 됨 명시적인 것.
+if(str.equals(input)) { // ==연산자는 ==정수나 실수만 가능함. string은 다름.
