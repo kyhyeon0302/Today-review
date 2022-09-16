@@ -5,4 +5,3 @@ CS 5대 지식
 
 switch case 문에서는 defalut가 반드시 필요한 것은 아니다.
 if else if보다 switch case가 더 깔끔하게 보일 수 있다.
-
