@@ -1,0 +1,23 @@
+for에서 char형도 사용 가능하다.
+
+ex 
+/* 1076 문자1개 입력받아 알파벳 출력하기
+입력 :영문자 1개가 입력된다. (a ~ z) 출력 : a부터 입력한 문자까지 순서대로 공백을 두고 출력한다.
+입력 : f 출력 :a b c d e f
+*/
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		
+		char a = sc.nextLine().charAt(0); 
+		//charAt()는 String으로 지정된 문자열 중에서 하나만 선택해서 char타입으로 변환
+		for(char i = 'a'; i <= a; i++) {
+			System.out.println(i+" ");
+		}
+	}
+}
+
+
