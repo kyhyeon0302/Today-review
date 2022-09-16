@@ -2,3 +2,7 @@ CS 5대 지식
 운영체제, 네트워크, 데이터베이스, 알고리즘, 자료구조
 
 완벽히 이해하기.
+
+switch case 문에서는 defalut가 반드시 필요한 것은 아니다.
+if else if보다 switch case가 더 깔끔하게 보일 수 있다.
+
