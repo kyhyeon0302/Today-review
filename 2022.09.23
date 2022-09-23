@@ -1,0 +1,7 @@
+접근 제어자 : public, protected, default, private
+그 외 : static, final, abstact, native, transient, sychronized, .....
+
+제어자들과의 관계의 순서는 존재 하지 않지만 주로 접근 제어자를 제일 왼쪽에 둔다.
+
+
+ex ) public static void main(String[] args) {
