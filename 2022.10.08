@@ -1,0 +1,21 @@
+    제네릭스를 이용하여 표시
+
+
+		ArrayList<Integer> ArrList = new ArrayList<>();
+		ArrList.sort(null);  // 정렬
+		ArrList.size(); //ArrayList의 크기
+		
+		
+		Map<String,Integer> map = new HashMap<>();
+		map.put("str",1); //map에 key. value 입력
+		map.get("str");
+		map.containsKey("str"); // map에 key값 존재 확인
+		//map의 값 전체를 조회할때는 Iterator를 사용
+		
+		Iterator<String> it = map.keySet().iterator();
+		
+		while(it.hasNext()) {
+			String key = it.next();
+			int value = map.get(key);
+		}
+
