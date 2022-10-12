@@ -1,0 +1,7 @@
+queue는 LinkedList로 선언되는데
+이때 while문을 돌릴 때 q.size() > 1 이런식으로 표현이 가능하다.
+또한 offer : 추가
+poll : 삭제
+size : 크기
+가 가장 많이 사용된다.
+
