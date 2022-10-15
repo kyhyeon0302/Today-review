@@ -1,3 +1,26 @@
 파이썬으로 코딩테스트
 준비 제대로 하고
 머신러닝 공부 게을리하지 말자
+
+그리디는 탐욕적 알고리즘이라는 뜻으로서
+현재 상황에서 좋은 것을 고르는 알고리즘을 말한다.
+
+#거스름돈 문제
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+n = 1350
+count = 0
+
+list = [500, 100, 50, 10]
+
+for coin in list:
+    count += n // coin  # //연산자는 나누기를 의미
+    n %= coin #왼쪽 변수에서 오른쪽 값을 나눈 나머지의 결과를 왼쪽변수에 할당한다.
+    
+    
+print(count)
+
+가 대표적인 그리디 알고리즘 이다.
