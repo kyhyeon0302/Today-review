@@ -1,0 +1,14 @@
+1. 스프링 jsp에서 매우매우 중요한 사실이 있다......
+
+{}
+() 혼돈해서 쓰면 에러뜨니깐
+안되면 이걸로 확인하자...
+
+
+2. the import javax servlet http cannot be resolved
+
+스프링에서 javax servlet이 안되어 오류가 뜨면 대부분 서블릿 문제이다.
+이럴 때는 내가 쓴 글을 다시 보자
+톰켓 연결만 해주면 된다.
+
+https://hyeon0302.tistory.com/20?category=1062359
