@@ -14,3 +14,7 @@ join point : advice가 추가될 대상
 pointcut : join point들을 정의한 패턴이다.
 proxy : target에 adivce가 동적으로 추가되어 생성된 객체이다.
 weaving : target에 advice를 추가해서 proxy를 생성하는 것이다.
+
+
+
+AOP와 OOP의 핵심기능은 변경에 유리한 코드를 짜기 위한 것이다!!
