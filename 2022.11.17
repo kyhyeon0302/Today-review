@@ -2,3 +2,15 @@
 1. 관심사
 2. 변하는것과 변하지 않는 것
 3. 중복 되었을 경우로 나뉘어서 분리한다.
+
+관점 지향 프로그래밍으로
+기능을  동적으로 추가해주는 기술이다.
+메서드의 시작 또는 끝에 자동으로 코드를 추가한다.
+Advice의 설정은 XML과 애너테이션, 두가지 방법을 통해 가능하다
+
+target : advice가 추가되 객체
+advice : target에 동적으로 추가될 부가 기능 및 코드
+join point : advice가 추가될 대상
+pointcut : join point들을 정의한 패턴이다.
+proxy : target에 adivce가 동적으로 추가되어 생성된 객체이다.
+weaving : target에 advice를 추가해서 proxy를 생성하는 것이다.
