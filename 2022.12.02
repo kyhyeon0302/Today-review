@@ -1,0 +1,3 @@
+@Autowired 
+@Service
+@Repository 관려해서 정리하기. 
