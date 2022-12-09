@@ -1,0 +1,38 @@
+do while문, for, if문을 통해서 반복 과정에서 조건 판단하는 것을 해보자.
+
+import java.util.*;
+
+
+public class Main{
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n, w ;
+		
+		do {
+			System.out.print("n값: ");
+			n = sc.nextInt();
+		}while( n<=0);
+		
+		do {
+			System.out.print("w값: ");
+			w = sc.nextInt();
+		}while( w<=0 || w > n);
+		
+		for(int i=0; i<n; i++ ) {
+			System.out.print("+");
+			if( i % w == w-1)
+				System.out.println();
+		}
+		
+		if( n % w != 0)
+			System.out.println();
+		
+		
+
+	}
+}
+
+하지만 repeat 메서드를 이용하면 더 간단하게 나타낼 수 있다.
+
