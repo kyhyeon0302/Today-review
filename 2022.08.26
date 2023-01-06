@@ -1,1 +1,38 @@
-1
+/*
+
+'/' : 몫
+'%' : 니머지
+
+
+
+a / b : a x (1/b)했을 때 몫
+a % b : a x (1/b)햇을 때 나머지
+a = a % b --같은 말-- a %= b
+
+ */
+import java.io.*;
+
+
+public class Main{
+	
+	public static void main(String[] args) throws IOException{
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine());
+		
+		int A = 1000-N;
+		int cnt = 0;
+		int[] coinArr = {500, 100, 50, 10, 5, 1};
+		
+		for(int i=0; i<coinArr.length; i++) {
+			int coin = coinArr[i]; //i를 돌 때 마다 coin이 index요소가 됨
+			cnt += A / coin; // cnt = cnt + 몫
+			A %= coin; // N = N % coin 같은말 coin을 N으로 나누었을 때 나머지
+		}
+		System.out.println(cnt);
+	}
+	
+
+	
+	
+}
